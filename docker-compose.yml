@@ -7,8 +7,9 @@ services:
             context: .
             dockerfile: Dockerfile
         volumes:
-            - ./code:/code
+            - ./:/code
         tty: true
         ports:
             - 8000:8000
             - 9929:9929
+        # entrypoint: /code/entrypoint.sh
