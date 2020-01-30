@@ -7,7 +7,7 @@ services:
             context: .
             dockerfile: Dockerfile
         volumes:
-            - ./:/code
+            - ./my-site/:/my-site
         tty: true
         ports:
             - 8000:8000
